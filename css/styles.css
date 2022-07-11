@@ -355,7 +355,7 @@ body {
 .work {
   padding-bottom: 94px;
 }
-.work-list {
+.work__list {
   display: flex;
 }
 
@@ -376,17 +376,17 @@ body {
   margin-right: 0px;
 }
 
-.work-item {
+.work__item {
   margin-right: 30px;
   width: 370px;
   position: relative;
 }
 
-.work-item:last-child {
+.work__item:last-child {
   margin-right: 0;
 }
 
-.work-aside {
+.work__aside {
   position: absolute;
   bottom: 0;
 
@@ -966,9 +966,6 @@ img {
 
 .modal-close:hover {
   fill: var(--accent-color);
-}
-
-.modal-close:focus {
 }
 
 .modal-title {
