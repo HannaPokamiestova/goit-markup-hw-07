@@ -717,7 +717,6 @@ body {
   transition-timing-function: var(--transition-animation);
   cursor: pointer;
 }
-
 .modal-close:hover {
   fill: var(--accent-color);
 }
@@ -786,19 +785,17 @@ body {
   padding-right: 15px;
   padding-left: 45px;
 }
-
 .modal-input:focus {
   border: 1px solid var(--accent-color);
+}
+.modal-input::placeholder {
+  color: var(--secondary-text-colorйу);
 }
 
 .modal-input:hover ~ .button-icon,
 .modal-input:focus ~ .button-icon,
 .button-icon:hover {
   fill: var(--accent-color);
-}
-
-.modal-input::placeholder {
-  color: var(--secondary-text-colorйу);
 }
 
 .button-icon {
