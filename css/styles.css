@@ -7,7 +7,7 @@
 /* Вторичный цвет фона /приглушенно серый/ наша команда #F5F4FA */
 /* Цвет фона заголовка и футера /серый/ #2F303A */
 
-:root {
+/* :root {
   --logo-color: #000000;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
@@ -30,9 +30,9 @@
   --form-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --background-buttom-color: #188ce8;
   --buttom-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -52,9 +52,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
-body {
+/* body {
   background: var(--white-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -63,16 +63,15 @@ body {
 
 .accent {
   color: var(--accent-color);
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: 1px solid red; */
-}
+} */
 
-.list {
+/* .list {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
@@ -81,9 +80,9 @@ body {
 
 .address {
   font-style: normal;
-}
+} */
 
-.button {
+/* .button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -106,9 +105,9 @@ body {
   min-width: auto;
   padding: 6px 22px;
   border-radius: 4px;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -120,19 +119,19 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* ------------- HEADER ---------- */
 
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
 .header .container {
   display: flex;
-}
+}  */
 
-.logo {
+/* .logo {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -140,9 +139,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
+} */
 
-.header .logo {
+/* .header .logo {
   display: flex;
   align-items: center;
 }
@@ -163,11 +162,11 @@ body {
 
 .site-contacts {
   margin-left: auto;
-}
+} 
 
 /* site-nav */
 
-.header-link {
+/* .header-link {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -239,7 +238,7 @@ body {
 .site-contacts .contacts-icon:hover,
 .site-contacts .contacts-icon:focus {
   fill: var(--accent-color);
-}
+} */
 
 /* ------------- HERO ---------- */
 
@@ -278,7 +277,7 @@ body {
 
 /* ------------- BENEFITS ---------- */
 
-.benefits {
+/* .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -290,7 +289,7 @@ body {
 .benefits__item {
   width: 270px;
   margin-right: 30px;
-  &:last-child: {
+  &:last-child {
     margin-right: 0;
   }
 }
@@ -347,10 +346,10 @@ body {
   width: 270px;
   height: 75px;
   margin-top: 10px;
-}
+} */
 
-/* ------------- WORK ---------- */
-
+------------- WORK ----------
+/* 
 .work {
   padding-bottom: 94px;
 }
@@ -401,7 +400,7 @@ body {
   text-transform: uppercase;
   color: var(--white-color);
   background-color: var(--work-aside-bg);
-}
+} */
 /* ------------- TEAM ---------- */
 
 .team {
@@ -965,9 +964,6 @@ img {
 
 .modal-close:hover {
   fill: var(--accent-color);
-}
-
-.modal-close:focus {
 }
 
 .modal-title {

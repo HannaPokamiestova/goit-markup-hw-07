@@ -1,1 +1,12 @@
-@import './utilities/variables'
+@import './utilities/variables';
+@import './utilities/hidden';
+@import './base/reset';
+@import './base/common';
+
+@import './components/container';
+@import './components/logo';
+@import './components/button';
+
+@import './layout/header';
+@import './layout/benefits';
+@import './layout/work';
