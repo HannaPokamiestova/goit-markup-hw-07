@@ -42,10 +42,13 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header-link:hover,
-.header-link:focus,
 .site-contacts .header-link:hover,
 .site-contacts .header-link:focus {
     color: var(--accent-color);

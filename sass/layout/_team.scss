@@ -73,14 +73,14 @@
 
     transition: color var(--transition-time) var(--transition-animation),
         background-color var(--transition-time) var(--transition-animation);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-color);
+    }
 }
 
 .team-soc-icon {
     fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-    background-color: var(--accent-color);
-    color: var(--white-color);
 }

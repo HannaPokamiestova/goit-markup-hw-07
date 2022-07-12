@@ -34,14 +34,14 @@
     border-radius: 4px;
 
     transition: color var(--transition-time) var(--transition-animation) border-color var(--transition-time) var(--transition-animation);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
 }
 
 .clients-icon {
     fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
 }

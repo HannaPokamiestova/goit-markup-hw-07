@@ -441,15 +441,13 @@ body {
   justify-content: center;
   transition: color var(--transition-time) var(--transition-animation), background-color var(--transition-time) var(--transition-animation);
 }
+.team-soc-link:hover, .team-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
 
 .team-soc-icon {
   fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
 }
 
 .section-clients {
@@ -486,15 +484,13 @@ body {
   border-radius: 4px;
   transition: color var(--transition-time) var(--transition-animation) border-color var(--transition-time) var(--transition-animation);
 }
+.clients-link:hover, .clients-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
 
 .clients-icon {
   fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
 }
 
 .footer {
@@ -615,9 +611,7 @@ body {
   transition-property: border-color;
   color: var(--white-color);
 }
-
-.form-input:hover,
-.form-input:focus {
+.form-input:hover, .form-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -895,9 +889,10 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.header-link:hover, .header-link:focus {
+  color: var(--accent-color);
+}
 
-.header-link:hover,
-.header-link:focus,
 .site-contacts .header-link:hover,
 .site-contacts .header-link:focus {
   color: var(--accent-color);
