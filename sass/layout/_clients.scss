@@ -1,0 +1,47 @@
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-list .item:last-child {
+    margin-right: 0px;
+}
+
+.clients-item {
+    margin-right: 30px;
+    list-style: none;
+}
+
+.clients-item:last-child {
+    margin: 0px;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    color: var(--icons-color);
+
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+
+    transition: color var(--transition-time) var(--transition-animation) border-color var(--transition-time) var(--transition-animation);
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}

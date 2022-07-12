@@ -1,0 +1,218 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    transition: opacity var(--transition-time) var(--transition-animation),
+        visibility var(--transition-time) var(--transition-animation);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-dialog {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    box-shadow: var(--modal-shadow);
+
+    transform: scale(1);
+    transition: transform var(--transition-time) var(--transition-animation);
+}
+
+.modal-dialog {
+    position: relative;
+
+    width: 528px;
+    max-width: 100%;
+    min-height: 580px;
+    margin: auto;
+    padding-left: 41px;
+    padding-top: 40px;
+    padding-right: 39px;
+    padding-bottom: 40px;
+
+    transform: none;
+    transition-property: transform, opacity;
+    transition-duration: var(--transition-time);
+    transition-timing-function: var(--transition-animation);
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+    border: 1px solid var(--modal-close-border-color);
+    border-radius: 50%;
+
+    transition-property: fill;
+    transition-duration: var(--transition-time);
+    transition-timing-function: var(--transition-animation);
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    fill: var(--accent-color);
+}
+
+.modal-title {
+    text-align: center;
+    line-height: 23px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+}
+
+.form {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field:last-of-type {
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    padding-bottom: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.01em;
+    display: block;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 19px;
+
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+.modal-comment {
+    width: 448px;
+    height: 120px;
+    border: 1px solid var(--form-color);
+    border-radius: 4px;
+    resize: none;
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.modal-input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid var(--form-color);
+    border-radius: 4px;
+    padding-right: 15px;
+    padding-left: 45px;
+}
+
+.modal-input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.modal-input:hover~.button-icon,
+.modal-input:focus~.button-icon,
+.button-icon:hover {
+    fill: var(--accent-color);
+}
+
+.modal-input::placeholder {
+    color: var(--secondary-text-colorйу);
+}
+
+.button-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--transition-time) var(--transition-animation);
+}
+
+.button-acent {
+    width: 200px;
+    background-color: var(--background-buttom-color);
+    box-shadow: var(--buttom-box-shadow);
+
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-agree {
+    margin-top: 10px;
+    margin-bottom: 30 px;
+}
+
+.icon-modal-agreement {
+    fill: transparent;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    vertical-align: text-top;
+    transition: var(--transition-time) var(--transition-animation);
+    transition-property: fill, background-color, border-color;
+    cursor: pointer;
+}
+
+.icon-modal-agreement-input:hover~.icon-modal-agreement,
+.icon-modal-agreement-input:focus~.icon-modal-agreement {
+    border-color: var(--accent-color);
+}
+
+.icon-modal-agreement-input:checked~.icon-modal-agreement {
+    fill: var(--white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.agree {
+    margin-bottom: 30px;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+.modal-link {
+    color: var(--accent-color);
+}
